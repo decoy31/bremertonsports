@@ -4,8 +4,7 @@
   "description": "Website code of bremertonsports.com",
   "main": "index.js",
   "scripts": {
-    "build": "",
-    "test": ""
+    "build": "npx tailwindcss -i ./src/index.css -o ./dist/index.css"
   },
   "repository": {
     "type": "git",
