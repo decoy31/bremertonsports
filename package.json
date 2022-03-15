@@ -1,0 +1,23 @@
+{
+  "name": "bremertonsports",
+  "version": "1.0.0",
+  "description": "Website code of bremertonsports.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decoy31/bremertonsports.git"
+  },
+  "author": "Tim Duffey <decoy31@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decoy31/bremertonsports/issues"
+  },
+  "homepage": "https://github.com/decoy31/bremertonsports#readme",
+  "devDependencies": {
+    "tailwindcss": "3.0.23"
+  }
+}
