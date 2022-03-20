@@ -4,7 +4,7 @@
   "description": "Website code of bremertonsports.com",
   "main": "index.js",
   "scripts": {
-    "start-server": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
     "build": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
     "watch": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
   },
