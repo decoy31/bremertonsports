@@ -1,8 +1,26 @@
 @font-face {
 	font-family: 'Holtwood One SC';
-	src: url('../assets/font/HoltwoodOneSC-Regular.ttf');
+	src: url('../assets/fonts/HoltwoodOneSC-Regular.ttf');
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	padding-bottom: 3rem;
+}
+
+a,
+a:visited {
+	@apply text-blue-800;
+}
+
+a:hover {
+	@apply text-blue-600;
+}
+
+a:focus,
+a:active {
+	@apply text-blue-400;
+}

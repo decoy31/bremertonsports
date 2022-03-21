@@ -6,7 +6,7 @@
   <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
   <meta charset="utf-8">
   <title>Bremerton Sports Center</title>
-  <meta name="description" content="Your home for indoor soccer on the Olympic Peninsula. Home of the Oly-Pen Force Men's and Women's Semi Pro Soccer Club.">
+  <meta name="description" content="Your home for indoor soccer in Bremerton and the wider Olympic Peninsula region. Home of the Oly-Pen Force Men's and Women's Semi Pro Soccer Club.">
   <meta name="author" content="Bremerton Sports Center, LLC">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0, maximum-scale=1">
   <!--[if lt IE 9]>
@@ -14,32 +14,104 @@
   <![endif]-->
 </head>
 <body class="antialiased">
-  <header class="container">
-    <div class="columns-1 mt-2">
-      <img class="inline-block w-12 h-auto" src="./assets/logo/logo-nobackground.svg" alt="Bremerton Sports Center" />
-      <h1 class="inline-block text-3xl align-middle sm:ml-1" style="font-family: 'Holtwood One SC'">Bremerton <span class="text-light-blue">Sports Center</span></h1>
+  <header class="container mt-4">
+    <div class="columns-1 flex flex-row items-center">
+      <img class="w-12 h-auto" src="./assets/images/logos/logo-nobackground.svg" alt="Bremerton Sports Center logo" />
+      <h1 class="text-3xl align-middle ml-3" style="font-family: 'Holtwood One SC'">Bremerton <span class="block md:inline text-light-blue">Sports Center</span></h1>
     </div>
   </header>
-  <section class="container">
-    <div class="columns-1 mt-3">
-      <p>This site is a work-in-progress. More content to come soon.</p>
+  <hr class="mt-4" />
+  <!-- <aside class="container mt-3">
+    <div class="columns-1">
+      <div class="w-full p-3 bg-orange">
+        <p class="text-white">This site is a work-in-progress.</p>
+      </div>
     </div>
-  </section>
-  <!-- <section class="container">
-    <div class="columns-3">
-      <div class="">Soccer</div>
-      <div class="">Corn Hole</div>
-      <div class="">Field Rentals</div>
+  </aside> -->
+  <main role="main">
+    <div class="container mt-8">
+      <h2 class="text-3xl">Programs &amp; Services</h2>
+      <div class="columns-1 sm:columns-3 flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start sm:flex-wrap mt-4">
+        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pr-4 pb-6">
+          <div id="section-soccer" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+            <img class="w-full h-[300px] object-cover" src="/assets/images/programs/adult-mens.jpg" alt="soccer team photo" />
+            <div class="m-4">
+              <h3 class="block text-2xl">Soccer</h3>
+              <p>The center offers both adult and youth leagues.</p>
+              <a class="inline-block mt-4" href="https://www.olypensports.com/soccer">Sign up</a>
+            </div>
+          </div>
+        </section>
+        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pr-4 sm:pl-4 pb-6">
+          <div id="section-rentals" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+            <img class="w-full h-[300px] object-cover" src="/assets/images/programs/field-rental.jpg" alt="field 1 with bowling pins and kids" />
+            <div class="m-4">
+              <h3 class="text-2xl">Field &amp; Party Room Rentals</h3>
+              <p>Three indoor fields and two party rooms are available for daily rentals.</p>
+              <a class="inline-block mt-4" href="https://www.olypensports.com/pricing">Pricing</a>
+            </div>
+          </div>
+        </section>
+        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pl-4 pb-6">
+          <div id="section-cornhole" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+            <img class="w-full h-[300px] object-cover" src="/assets/images/programs/cornhole.jpg" alt="cornhole participants" />
+            <div class="m-4">
+              <h3 class="text-2xl">Cornhole</h3>
+              <p>We are currently offering open drop-in cornhole tournaments on Tuesdays and Thursdays.</p>
+              <a class="inline-block mt-4" href="https://www.olypensports.com/soccer">Sign up</a>
+            </div>
+          </div>
+        </section>
+        <section class="w-full sm:basis-full lg:basis-6/12 flex flex-col self-center sm:self-start pt-2">
+          <h2 class="text-3xl">Home Team</h2>
+          <div id="section-oly-pen-force" class="border cursor-pointer hover:shadow-lg mt-4" role="link" tabindex="0">
+            <img class="w-full h-[300px] object-cover" src="/assets/images/programs/force.jpg" alt="oly-pen force with star wars light sabers" />
+            <div class="m-4 flex flex-row items-center">
+              <img class="w-auto h-[125px]" src="./assets/images/logos/force-logo.webp" alt="Oly-Pen Force logo" />
+              <div class="ml-3">
+                <h3 class="text-2xl">Oly-Pen Force</h3>
+                <p>Organized amature mens and womens indoor soccer teams using the center as their home field.</p>
+                <a class="inline-block mt-4" href="https://www.olypenforce.com/">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-  </section>
-  <section>
-    <div class=""><a href="https://www.olypenforce.com/">Oly-Pen Force</a></div>
-  </section> -->
-  <footer class="container">
-    <div class="columns-1 mt-3">
-      <small>&copy;2022 Bremerton Sports Center, LLC</small>
+  </main>
+  <hr class="mt-8" />
+  <footer class="container mt-4">
+    <div class="columns-1">
+      <small class="block sm:inline w-full">
+        &copy;2022 Bremerton Sports Center, LLC
+        <span class="hidden sm:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <address class="block sm:inline not-italic">
+          <a href="https://goo.gl/maps/fcmHFbXgLdDjLhBk8" target="blank" rel="noopener">1199 Union Ave W, Bremerton, WA 98312</a>
+          <span class="hidden sm:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <span class="block sm:inline"><a href="tel:+13604798388">(360) 479-8388</a></span>
+          <span class="hidden sm:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <span class="block sm:inline"><a href="mailto:info@bremertonsports.com">info@bremertonsports.com</a></span>
+        </address>
+      </small>
     </div>
   </section>
   <!--<script src="js/scripts.js"></script>-->
+  <script type="text/javascript">
+    var sectionSoccer = document.getElementById('section-soccer');
+    sectionSoccer.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/soccer'));
+
+    var sectionRentals = document.getElementById('section-rentals');
+    sectionRentals.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/prices'));
+
+    var sectionCornhole = document.getElementById('section-cornhole');
+    sectionCornhole.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/cornhole'));
+
+    var sectionOlyPenForce = document.getElementById('section-oly-pen-force');
+    sectionOlyPenForce.addEventListener('click', sectionClick.bind(this, 'https://www.olypenforce.com/'));
+
+    function sectionClick(href) {
+      window.location.href = href;
+    }
+  </script>
 </body>
 </html>
