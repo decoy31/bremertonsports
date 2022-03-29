@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'Holtwood One SC';
-	src: url('../assets/fonts/HoltwoodOneSC-Regular.ttf');
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
