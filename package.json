@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npm run build:common && npm run build:fonts && npm run build:index && npm run build:soccer",
-    "build:fonts": "npx tailwindcss -i ./src/inter.css -o ./dist/inter.css",
+    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer",
+    "build:fonts": "npx tailwindcss -i ./src/fonts.css -o ./dist/fonts.css",
     "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
     "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
     "watch:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch",
@@ -26,6 +26,8 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "0.4.0",
     "autoprefixer": "10.4.4",
+    "postcss": "8.4.12",
+    "postcss-import": "14.1.0",
     "tailwindcss": "3.0.23"
   }
 }
