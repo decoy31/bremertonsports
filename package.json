@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
-    "watch": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
+    "build": "npm run build:common && npm run build:fonts && npm run build:index && npm run build:soccer",
+    "build:fonts": "npx tailwindcss -i ./src/inter.css -o ./dist/inter.css",
+    "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
+    "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
+    "watch:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch",
+    "build:soccer": "npx tailwindcss -i ./src/soccer.css -o ./dist/soccer.css",
+    "watch:soccer": "npx tailwindcss -i ./src/soccer.css -o ./dist/soccer.css --watch"
   },
   "repository": {
     "type": "git",
