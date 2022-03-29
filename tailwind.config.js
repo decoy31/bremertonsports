@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme');
 const AspectRatio = require('@tailwindcss/aspect-ratio');
 
 module.exports = {
@@ -17,7 +17,10 @@ module.exports = {
         'orange': '#ffa33d',
         'light-blue': '#15a1d4'
       },
-      borderColor: '#333333'
+      borderColor: '#333333',
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+      }
     }
   },
   plugins: [
