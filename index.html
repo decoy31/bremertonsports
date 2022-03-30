@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Bremerton Sports Center</title>
   <meta name="description"
-    content="Your home for indoor soccer in Bremerton and the wider Olympic Peninsula region. Home of the Oly-Pen Force Men's and Women's Semi Pro Soccer Club.">
+    content="Your home for indoor soccer in Bremerton and the wider Olympic Peninsula region. Home of the Oly-Pen Force Men's and Women's Amature Soccer Clubs.">
   <meta name="author" content="Bremerton Sports Center, LLC">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0, maximum-scale=1">
@@ -40,63 +40,72 @@
     </div>
   </aside> -->
   <main role="main">
-    <div class="container">
-      <div class="hero-image-container">
-        <img class="hero-image w-full h-[500px] object-cover" src="/assets/images/center/outside-3-23-2022.jpg"
-          alt="Exterior photo of the Bremerton Sports Center" />
+    <div class="hero-image-container flex flex-row items-end">
+      <div class="container flex flex-row md:justify-end">
+        <!-- <aside class="mb-5 text-white font-serif font-semibold text-4xl">Center for community sports</aside> -->
       </div>
     </div>
     <div class="container mt-8">
       <h2 class="text-3xl sm:text-4xl">Programs</h2>
       <div
-        class="columns-1 sm:columns-3 flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start sm:flex-wrap mt-6">
-        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pr-4 pb-6">
-          <div id="section-soccer" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+        class="columns-1 md:columns-3 flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start md:flex-wrap mt-6">
+        <section class="w-full md:basis-4/12 flex flex-col self-center md:self-start md:pr-4 pb-6">
+          <div id="section-soccer" class="border" role="link" tabindex="0">
             <img class="w-full h-[300px] object-cover" src="/assets/images/programs/adult-mens.jpg"
               alt="soccer team photo" />
             <div class="m-4">
               <h3 class="text-2xl sm:text-3xl">Soccer Leagues & Programs</h3>
               <p class="mt-2">We offer both adult and youth soccer leagues and fun kid soccer programs.</p>
-              <a class="inline-block mt-4 text-lg" href="https://www.olypensports.com/soccer">Sign up</a>
+              <menu class="mt-4 text-lg flex flex-row justify-end md:justify-start" role="menu">
+                <li class="inline-block"><a class="font-semibold" href="https://apps.daysmartrecreation.com/dash/index.php?Action=Auth/login&company=olypensports">Register</a></li>
+                <li class="inline-block" aria-hidden="true">&nbsp;&nbsp;<span class="text-border-color">&#124;</span>&nbsp;&nbsp;</li>
+                <li class="inline-block"><a class="font-semibold" href="/soccer.html">More info</a></li>
+              </menu>
             </div>
           </div>
         </section>
-        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pr-4 sm:pl-4 pb-6">
-          <div id="section-rentals" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+        <section class="w-full md:basis-4/12 flex flex-col self-center md:self-start md:pr-4 md:pl-4 pb-6">
+          <div id="section-rentals" class="border" role="link" tabindex="0">
             <img class="w-full h-[300px] object-cover" src="/assets/images/programs/field-rental.jpg"
               alt="field 1 with bowling pins and kids" />
             <div class="m-4">
               <h3 class="text-2xl sm:text-3xl">Field &amp; Party Room Rentals</h3>
               <p class="mt-2">Three indoor fields and two party rooms are available for rent for games, team practices,
                 and other events.</p>
-              <a class="inline-block mt-4 text-lg" href="https://www.olypensports.com/pricing">Pricing</a>
+              <menu class="mt-4 text-lg flex flex-row justify-end md:justify-start" role="menu">
+                <li class="inline-block"><a class="font-semibold" href="https://www.olypensports.com/prices">Pricing</a></li>
+              </menu>
             </div>
           </div>
         </section>
-        <section class="w-full sm:basis-4/12 flex flex-col self-center sm:self-start sm:pl-4 pb-6">
-          <div id="section-cornhole" class="border cursor-pointer hover:shadow-lg" role="link" tabindex="0">
+        <section class="w-full md:basis-4/12 flex flex-col self-center md:self-start md:pl-4 pb-6">
+          <div id="section-cornhole" class="border" role="link" tabindex="0">
             <img class="w-full h-[300px] object-cover" src="/assets/images/programs/cornhole.jpg"
               alt="cornhole participants" />
             <div class="m-4">
               <h3 class="text-2xl sm:text-3xl">Cornhole</h3>
               <p class="mt-2">We are currently offering open drop-in cornhole events on Tuesdays and Thursdays.</p>
-              <a class="inline-block mt-4 text-lg" href="https://www.olypensports.com/soccer">Sign up</a>
+              <menu class="mt-4 text-lg flex flex-row justify-end md:justify-start" role="menu">
+                <li class="inline-block"><a class="font-semibold" href="https://www.olypensports.com/cornhole">Register</a></li>
+              </menu>
             </div>
           </div>
         </section>
-        <section class="w-full sm:basis-full lg:basis-6/12 flex flex-col self-center sm:self-start pt-4">
-          <h2 class="text-3xl sm:text-4xl">Home Team</h2>
-          <div id="section-oly-pen-force" class="border cursor-pointer hover:shadow-lg mt-6" role="link" tabindex="0">
+        <section class="w-full md:basis-full lg:basis-6/12 flex flex-col self-center md:self-start pt-4">
+          <h2 class="text-3xl md:text-4xl">Home Team</h2>
+          <div id="section-oly-pen-force" class="border mt-6" role="link" tabindex="0">
             <img class="w-full h-[300px] object-cover" src="/assets/images/programs/force.jpg"
               alt="oly-pen force with star wars light sabers" />
-            <div class="m-4 flex flex-col sm:flex-row items-start sm:items-center">
-              <img class="w-auto h-[75px] sm:h-[125px]" src="/assets/images/logos/force-logo.webp"
+            <div class="m-4 flex flex-col md:flex-row items-start md:items-center">
+              <img class="w-auto h-[75px] md:h-[125px]" src="/assets/images/logos/force-logo.webp"
                 alt="Oly-Pen Force logo" />
-              <div class="mt-2 sm:mt-0 sm:ml-6">
+              <div class="mt-2 md:mt-0 md:ml-6">
                 <h3 class="text-2xl sm:text-3xl">Oly-Pen Force</h3>
-                <p class="mt-2">Organized amature mens and womens indoor soccer teams using the center as their home
+                <p class="mt-2">Organized amature mens and womens indoor soccer clubs using the center as their home
                   field.</p>
-                <a class="inline-block mt-4 text-lg" href="https://www.olypenforce.com/">Learn more</a>
+                <menu class="mt-4 text-lg flex flex-row justify-end md:justify-start" role="menu">
+                  <li class="inline-block"><a class="font-semibold" href="https://www.olypenforce.com/">Learn more</a></li>
+                </menu>
               </div>
             </div>
           </div>
@@ -122,23 +131,6 @@
     </div>
   </footer>
   <!--<script src="js/scripts.js"></script>-->
-  <script type="text/javascript">
-    var sectionSoccer = document.getElementById('section-soccer');
-    sectionSoccer.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/soccer'));
-
-    var sectionRentals = document.getElementById('section-rentals');
-    sectionRentals.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/prices'));
-
-    var sectionCornhole = document.getElementById('section-cornhole');
-    sectionCornhole.addEventListener('click', sectionClick.bind(this, 'https://www.olypensports.com/cornhole'));
-
-    var sectionOlyPenForce = document.getElementById('section-oly-pen-force');
-    sectionOlyPenForce.addEventListener('click', sectionClick.bind(this, 'https://www.olypenforce.com/'));
-
-    function sectionClick(href) {
-      window.location.href = href;
-    }
-  </script>
 </body>
 
 </html>
