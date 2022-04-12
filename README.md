@@ -1,6 +1,6 @@
 # Bremerton Sports Center
 
-Code for the [Bremerton Sports Center website](bremertonsports.com).
+Code for the [Bremerton Sports Center website](https://www.bremertonsports.com/).
 
 ## Initial Setup
 
