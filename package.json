@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer",
+    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals",
     "build:fonts": "npx tailwindcss -i ./src/fonts.css -o ./dist/fonts.css",
     "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
     "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
     "watch:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch",
     "build:soccer": "npx tailwindcss -i ./src/soccer.css -o ./dist/soccer.css",
-    "watch:soccer": "npx tailwindcss -i ./src/soccer.css -o ./dist/soccer.css --watch"
+    "watch:soccer": "npx tailwindcss -i ./src/soccer.css -o ./dist/soccer.css --watch",
+    "build:rentals": "npx tailwindcss -i ./src/rentals.css -o ./dist/rentals.css",
+    "watch:rentals": "npx tailwindcss -i ./src/rentals.css -o ./dist/rentals.css --watch"
   },
   "repository": {
     "type": "git",
