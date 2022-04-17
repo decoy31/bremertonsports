@@ -21,10 +21,15 @@ a:active {
 	@apply text-blue-400;
 }
 
-header a,
-header a:visited,
-header a:hover,
-header a:focus,
-header a:active {
+header a {
+	@apply font-semibold;
+}
+
+header a > h1,
+header a:visited > h1,
+header a:hover > h1,
+header a:focus > h1,
+header a:active > h1 {
+	@apply font-normal;
 	@apply text-black;
 }

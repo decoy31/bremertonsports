@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/dist/fonts.css" />
   <link rel="stylesheet" href="/dist/common.css" />
   <meta charset="utf-8" />
+  <!-- TODO: REMOVE! --><meta name="robots" content="noindex">
   <title>Bremerton Sports Center</title>
   <meta name="description"
     content="Your home for indoor soccer in Bremerton and the wider Olympic Peninsula region. Home of the Oly-Pen Force Men's and Women's Semi Pro Soccer Club." />
@@ -19,15 +20,23 @@
 
 <body class="antialiased">
   <header class="container mt-4">
-    <div class="columns-1">
-      <a class="flex flex-row items-center" href="/">
-        <img class="w-12 h-auto" src="/assets/images/logos/logo-nobackground.svg" alt="Bremerton Sports Center logo" />
-      </a>
-      <a class="flex flex-row items-center" href="/">
-        <h1 class="text-3xl align-middle ml-3" style="font-family: 'Holtwood One SC'">
-          Bremerton <span class="block md:inline text-light-blue">Sports Center</span>
-        </h1>
-      </a>
+    <div class="flex flex-col lg:flex-row items-center justify-between">
+      <div class="flex flex-row items-center">
+        <a class="flex flex-row" href="/">
+          <img class="w-12 h-auto" src="/assets/images/logos/logo-nobackground.svg" alt="Bremerton Sports Center logo" />
+        </a>
+        <a class="flex flex-row" href="/">
+          <h1 class="text-3xl align-middle ml-3" style="font-family: 'Holtwood One SC'">
+            Bremerton <span class="block md:inline text-light-blue">Sports Center</span>
+          </h1>
+        </a>
+      </div>
+      <menu class="flex flex-row justify-between w-full max-w-lg">
+        <li><a href="/">Home</a></li>
+        <li><a href="/schedules.html">Schedules</a></li>
+        <li><a href="/rentals.html">Rentals</a></li>
+        <li><a href="https://apps.daysmartrecreation.com/dash/index.php?Action=Auth/login&company=olypensports">League Sign Ups</a></li>
+      </menu>
     </div>
   </header>
   <hr class="mt-4" />
