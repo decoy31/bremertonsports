@@ -33,3 +33,21 @@ header a:active > h1 {
 	@apply font-normal;
 	@apply text-black;
 }
+
+h1 {
+
+}
+
+ul,
+ol {
+	@apply list-inside;
+	@apply mx-5;
+}
+
+ol {
+	@apply list-decimal;
+}
+
+ul {
+	@apply list-disc;
+}

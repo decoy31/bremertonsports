@@ -15,7 +15,9 @@
     "build:rentals": "npx tailwindcss -i ./src/rentals.css -o ./dist/rentals.css",
     "watch:rentals": "npx tailwindcss -i ./src/rentals.css -o ./dist/rentals.css --watch",
     "build:cornhole": "npx tailwindcss -i ./src/cornhole.css -o ./dist/cornhole.css",
-    "watch:cornhole": "npx tailwindcss -i ./src/rentals.css -o ./dist/rentals.css --watch"
+    "watch:cornhole": "npx tailwindcss -i ./src/cornhole.css -o ./dist/cornhole.css --watch",
+    "build:rules": "npx tailwindcss -i ./src/rules.css -o ./dist/rules.css",
+    "watch:rules": "npx tailwindcss -i ./src/rules.css -o ./dist/rules.css --watch"
   },
   "repository": {
     "type": "git",
