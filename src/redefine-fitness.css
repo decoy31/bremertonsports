@@ -7,7 +7,7 @@
 }
 
 .redefine-fitness .hero-section__photo {
-    background-image: url('../assets/images/redefine-fitness/group-and-lindsey.jpg');
+    background-image: url('../assets/images/redefine-fitness/group-and-lindsey.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .redefine-fitness .about-section__photo {
-    background-image: url('../assets/images/redefine-fitness/group.jpg');
+    background-image: url('../assets/images/redefine-fitness/group.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .redefine-fitness .about-lindsey-section__photo {
-    background-image: url('../assets/images/redefine-fitness/lindsey.jpg');
+    background-image: url('../assets/images/redefine-fitness/lindsey.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
