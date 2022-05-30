@@ -7,7 +7,7 @@
 	background-image: url("../assets/images/center/outside-3-23-2022.jpg");
 }
 
-@media (md) {
+@screen md {
 	.hero-image-container {
 		height: 45vh;
 		background-size: cover;
