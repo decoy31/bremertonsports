@@ -1,0 +1,31 @@
+.redefine-fitness .hero-section__logo {
+    background-image: url('../assets/images/redefine-fitness/redefine-black-and-white-logo.png');
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.redefine-fitness .hero-section__photo {
+    background-image: url('../assets/images/redefine-fitness/group-and-lindsey.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.redefine-fitness .about-section__photo {
+    background-image: url('../assets/images/redefine-fitness/group.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.redefine-fitness .about-lindsey-section__photo {
+    background-image: url('../assets/images/redefine-fitness/lindsey.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
