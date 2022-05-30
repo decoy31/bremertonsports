@@ -4,13 +4,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url("../assets/images/center/outside-3-23-2022.jpg");
+	background-image: url("../assets/images/center/outside-3-23-2022-large.jpg");
 }
 
 @screen md {
 	.hero-image-container {
 		height: 45vh;
 		background-size: cover;
-		/*background-image: linear-gradient(to top, rgba(0,0,0,.55) 60px, transparent 100px), url("../assets/images/center/outside-3-23-2022.jpg");*/
+		/*background-image: linear-gradient(to top, rgba(0,0,0,.55) 60px, transparent 100px), url("../assets/images/center/outside-3-23-2022-large.jpg");*/
 	}
 }
