@@ -34,13 +34,9 @@ header a:active > h1 {
 	@apply text-black;
 }
 
-h1 {
-
-}
-
 ul,
 ol {
-	@apply list-inside;
+	@apply list-outside;
 	@apply mx-5;
 }
 
