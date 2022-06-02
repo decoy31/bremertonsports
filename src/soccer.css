@@ -6,20 +6,23 @@ table {
   @apply border-gray-300;
 }
 
-th,
 th {
+  @apply border;
+  @apply border-gray-300;
+  @apply text-center;
+  @apply font-bold;
+  @apply p-2;
+}
+
+td {
   @apply border;
   @apply border-gray-300;
   @apply text-center;
   @apply p-2;
 }
 
-td,
-td {
-  @apply border;
-  @apply border-gray-300;
-  @apply text-center;
-  @apply p-1;
+th.dow {
+  @apply bg-gray-100;
 }
 
 .table-wrapper {
