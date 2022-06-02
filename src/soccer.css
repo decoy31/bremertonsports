@@ -1,0 +1,28 @@
+table {
+  @apply w-full;
+  @apply table-auto;
+  @apply border-collapse;
+  @apply border;
+  @apply border-gray-400;
+}
+
+th,
+th {
+  @apply border;
+  @apply border-gray-400;
+  @apply text-center;
+  @apply p-2;
+}
+
+td,
+td {
+  @apply border;
+  @apply border-gray-400;
+  @apply text-center;
+  @apply p-1;
+}
+
+.table-wrapper {
+  @apply overflow-auto;
+  box-shadow: inset -10px 0 5px 0 rgb(0 0 0 / 0.05);
+}

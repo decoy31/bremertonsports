@@ -37,7 +37,7 @@ header a:active > h1 {
 ul,
 ol {
 	@apply list-outside;
-	@apply mx-5;
+	@apply mx-7;
 }
 
 ol {
