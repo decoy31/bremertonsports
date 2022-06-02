@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         'black': '#292929',
         'orange': '#ffa33d',
-        'light-blue': '#15a1d4'
+        'light-blue': '#15a1d4',
+        'border-color': 'rgb(209 213 219 / 1)'
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans]

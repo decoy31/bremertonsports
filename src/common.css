@@ -47,3 +47,11 @@ ol {
 ul {
 	@apply list-disc;
 }
+
+hr {
+	@apply border-gray-300;
+}
+
+.divider {
+	@apply text-border-color;
+}
