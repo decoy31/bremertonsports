@@ -4,7 +4,7 @@ const AspectRatio = require('@tailwindcss/aspect-ratio');
 module.exports = {
   content: [
     './src/**/*.{html,js}',
-    './*.html'
+    './**/*.html'
   ],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ module.exports = {
         'black': '#292929',
         'orange': '#ffa33d',
         'light-blue': '#15a1d4',
-        'dark-blue': '#0d0842',
+        'dark-blue': 'rgba(13,8,66,255)',
         'border-color': 'rgb(209 213 219 / 1)'
       },
       fontFamily: {

@@ -1,0 +1,32 @@
+.ape .hero-section__logo {
+    background-image: url('../assets/images/ape/ape-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+	background-color: white;
+    overflow: hidden;
+}
+
+.ape .hero-section__photo {
+    background-image: url('../assets/images/ape/high-jump-and-40.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ape .about-section__photo {
+    background-image: url('../assets/images/ape/long-jump.webp');
+    background-repeat: no-repeat;
+    background-position: center 54%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ape .about-jay-section__photo {
+    background-image: url('../assets/images/ape/coach-jay.webp');
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+    overflow: hidden;
+}
