@@ -14,3 +14,15 @@
 		/*background-image: linear-gradient(to top, rgba(0,0,0,.55) 60px, transparent 100px), url("../assets/images/center/outside-3-23-2022-large.jpg");*/
 	}
 }
+
+.current-events {
+	background-color: rgb(21 161 212 / 0.5);
+}
+
+.current-events a,
+.current-events a:visited,
+.current-events a:hover,
+.current-events a:active,
+.current-events a:focus {
+	@apply font-semibold;
+}
