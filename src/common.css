@@ -31,7 +31,7 @@ header a:hover > h1,
 header a:focus > h1,
 header a:active > h1 {
 	@apply font-normal;
-	@apply text-dark-blue;
+	@apply text-black;
 	font-family: 'Holtwood One SC';
 }
 
