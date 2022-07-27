@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape",
+    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy",
     "build:fonts": "npx tailwindcss -i ./src/fonts.css -o ./dist/fonts.css",
     "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
     "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
@@ -21,7 +21,9 @@
     "build:redefine-fitness": "npx tailwindcss -i ./src/redefine-fitness.css -o ./dist/redefine-fitness.css",
     "watch:redefine-fitness": "npx tailwindcss -i ./src/redefine-fitness.css -o ./dist/redefine-fitness.css --watch",
     "build:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css",
-    "watch:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css --watch"
+    "watch:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css --watch",
+    "build:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css",
+    "watch:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css --watch"
   },
   "repository": {
     "type": "git",
