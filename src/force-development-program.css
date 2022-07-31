@@ -1,0 +1,23 @@
+.force-development-program .hero-section__logo {
+    background-image: url('../assets/images/force-development-program/fdp-logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.force-development-program .hero-section__photo {
+    background-image: url('../assets/images/programs/fdp.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.force-development-program .about-section__photo {
+    background-image: url('../assets/images/force-development-program/fdr-player-excited.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}

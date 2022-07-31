@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy",
+    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy && npm run build:force-development-program",
     "build:fonts": "npx tailwindcss -i ./src/fonts.css -o ./dist/fonts.css",
     "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
     "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
@@ -23,7 +23,9 @@
     "build:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css",
     "watch:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css --watch",
     "build:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css",
-    "watch:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css --watch"
+    "watch:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css --watch",
+    "build:force-development-program": "npx tailwindcss -i ./src/force-development-program.css -o ./dist/force-development-program.css",
+    "watch:force-development-program": "npx tailwindcss -i ./src/force-development-program.css -o ./dist/force-development-program.css --watch"
   },
   "repository": {
     "type": "git",
