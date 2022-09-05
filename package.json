@@ -24,6 +24,8 @@
     "watch:ape": "npx tailwindcss -i ./src/ape.css -o ./dist/ape.css --watch",
     "build:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css",
     "watch:rising-force-academy": "npx tailwindcss -i ./src/rising-force-academy.css -o ./dist/rising-force-academy.css --watch",
+    "build:force-development-program": "npx tailwindcss -i ./src/force-development-program.css -o ./dist/force-development-program.css",
+    "watch:force-development-program": "npx tailwindcss -i ./src/force-development-program.css -o ./dist/force-development-program.css --watch",
     "build:silent-auction": "npx tailwindcss -i ./src/silent-auction/index.css -o ./dist/silent-auction/index.css",
     "watch:silent-auction": "npx tailwindcss -i ./src/silent-auction/index.css -o ./dist/silent-auction/index.css --watch",
     "build:silent-auction-items": "npx tailwindcss -i ./src/silent-auction/items.css -o ./dist/silent-auction/items.css",
