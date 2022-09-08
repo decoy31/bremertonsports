@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const AspectRatio = require('@tailwindcss/aspect-ratio');
+const Forms = require('@tailwindcss/forms');
 
 module.exports = {
   content: [
@@ -28,6 +29,9 @@ module.exports = {
     // The aspect-{ratio} utilities use the native aspect-ratio CSS property, which was not supported in Safari until
     // version 15. Until Safari 15 is popularized, Tailwind’s aspect-ratio plugin is a good alternative.
     // Source: https://tailwindcss.com/docs/aspect-ratio
-    AspectRatio
+    AspectRatio,
+    Forms({
+      strategy: 'base'
+    }),
   ],
 }
