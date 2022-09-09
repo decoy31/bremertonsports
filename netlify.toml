@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/concession-stand/menu"
+  to = "/assets/docs/menu/bremerton-sports-center-concession-stand-menu.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/menu"
+  to = "/assets/docs/menu/bremerton-sports-center-concession-stand-menu.pdf"
+  status = 301
+  force = false
