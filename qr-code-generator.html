@@ -60,7 +60,7 @@
         This QR code generator is for use by Bremerton Sports Center employees only.
       </p>
       <p class="mt-2">
-        If the text in textbox below starts with &quot;https://bremertonsports.com&quot;, the resulting QR code will
+        If the text in the textbox below starts with &quot;https://bremertonsports.com&quot;, the resulting QR code will
         include Bremerton Sports Center logo. Otherwise, the logo will be omitted.
       </p>
       <div id="qr-code-container" class="mt-6 columns-1"></div>
@@ -1054,8 +1054,8 @@
         if (this.state.value.startsWith('https://bremertonsports.com')) {
           qrCodeCanvasConfig.imageSettings = {
             src: '/assets/images/logos/logo-nobackground.svg',
-            width: 35,
-            height: 45,
+            width: 40,
+            height: 55,
             excavate: true,
           };
         }
