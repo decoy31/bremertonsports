@@ -57,9 +57,13 @@
     <div class="container mt-8">
       <h2 class="text-3xl sm:text-4xl">QR Code Generator</h2>
       <p class="mt-6">
-        This QR code generator is for use by Bremerton Sports Center employees.
+        This QR code generator is for use by Bremerton Sports Center employees only.
       </p>
-      <div id="qr-code-container" class="columns-1"></div>
+      <p class="mt-2">
+        If the text in textbox below starts with &quot;https://bremertonsports.com&quot;, the resulting QR code will
+        include Bremerton Sports Center logo. Otherwise, the logo will be omitted.
+      </p>
+      <div id="qr-code-container" class="mt-6 columns-1"></div>
     </div>
   </main>
 
@@ -1038,35 +1042,80 @@
       }
 
       render() {
+        const qrCodeCanvasConfig = {
+          key: 'qr-code-result',
+          id: 'qr-code',
+          className: 'mt-6',
+          value: this.state.value,
+          size: 200,
+          level: 'H'
+        };
+
+        if (this.state.value.startsWith('https://bremertonsports.com')) {
+          qrCodeCanvasConfig.imageSettings = {
+            src: '/assets/images/logos/logo-nobackground.svg',
+            width: 35,
+            height: 45,
+            excavate: true,
+          };
+        }
+
         return React.createElement('form', {
           className: 'QRCodeContainer',
           onSubmit: this.handleSubmit
         }, [
-          React.createElement(QRCodeInput, {
-            key: 'qr-code-value',
-            className: 'mt-6 w-full sm:w-1/2',
-            value: this.state.value,
-            onChange: this.handleChange
-          }),
           React.createElement(
-            QRCodeCanvas,
+            'label',
             {
-              key: 'qr-code-result',
-              id: 'qr-code',
-              className: 'mt-6',
-              value: this.state.value
-            }
+              key: 'qr-code-value',
+              className: 'font-semibold'
+            },
+            [
+              React.createElement(
+                'span',
+                { className: 'block' },
+                'QR Code Value'
+              ),
+              React.createElement(QRCodeInput, {
+                id: 'qr-code-value',
+                className: 'mt-2 w-full sm:w-1/2',
+                value: this.state.value,
+                onChange: this.handleChange
+              })
+            ]
           ),
           React.createElement(
-            'a',
+            QRCodeCanvas,
+            qrCodeCanvasConfig
+          ),
+          React.createElement(
+            'div',
             {
-              key: 'qr-code-save',
-              className: 'mt-4 inline-block',
-              href: '#',
-              onClick: this.handleDownloadClick
+              key: 'qr-code-save-container',
             },
-            'Download as PNG Image'
-          )
+            [
+              React.createElement(
+                'a',
+                {
+                  key: 'qr-code-save',
+                  className: 'mt-6 inline-block font-semibold',
+                  href: '#',
+                  onClick: this.handleDownloadClick
+                },
+                'Download as PNG Image'
+              ),
+              React.createElement(
+                'p',
+                {
+                  className: 'mt-4',
+                  key: 'qr-code-save-description'
+                },
+                [
+                  React.createElement('strong', { key: 'qr-code-save-description-strong' }, 'NOTE:'),
+                  ' Before downloading, make sure to test the QR code above with your phone to make sure it works!'
+                ]
+              )
+            ])
         ]);
       }
     }
@@ -1075,6 +1124,7 @@
       return React.createElement(
         'input',
         {
+          id: props.id,
           type: 'text',
           className: props.className + ' rounded',
           value: props.value,
