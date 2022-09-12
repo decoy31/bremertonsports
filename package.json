@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Website code of bremertonsports.com",
   "main": "index.js",
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  },
   "scripts": {
     "start": "python3 -m http.server 3000",
     "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy && npm run build:force-development-program && npm run build:silent-auction && npm run build:silent-auction-items && npm run build:qr-code-generator",
