@@ -57,6 +57,18 @@ hr {
 	@apply text-border-color;
 }
 
+.notice {
+	background-color: rgb(21 161 212 / 0.5);
+}
+
+.notice a,
+.notice a:visited,
+.notice a:hover,
+.notice a:active,
+.notice a:focus {
+	@apply font-semibold;
+}
+
 .site-footer svg.icon {
 	display: inline-block;
 	vertical-align: text-top;
