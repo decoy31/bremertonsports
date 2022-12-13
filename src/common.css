@@ -21,6 +21,20 @@ a:active {
 	@apply text-blue-400;
 }
 
+a.text-gray,
+a.text-gray:visited {
+	@apply text-gray-300;
+}
+
+a.text-gray:hover {
+	@apply text-gray-200;
+}
+
+a.text-gray:focus,
+a.text-gray:active {
+	@apply text-gray-100;
+}
+
 header a {
 	@apply font-semibold;
 }
