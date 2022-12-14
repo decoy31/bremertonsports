@@ -84,6 +84,7 @@ hr {
 }
 
 .badge {
+	@apply select-none;
 	@apply inline-block;
 	@apply rounded-full;
 	@apply border;
