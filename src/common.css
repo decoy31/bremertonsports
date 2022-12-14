@@ -83,6 +83,37 @@ hr {
 	@apply font-semibold;
 }
 
+.badge {
+	@apply inline-block;
+	@apply rounded-full;
+	@apply border;
+	@apply border-gray-300;
+	@apply bg-white;
+	@apply px-2;
+	@apply py-1;
+	@apply text-xs;
+	@apply font-medium;
+	@apply text-black;
+}
+
+.badge--state-green {
+	@apply border-green-100;
+	@apply bg-green-100;
+	@apply text-green-800;
+}
+
+.badge--state-red {
+	@apply border-red-100;
+	@apply bg-red-100;
+	@apply text-red-800;
+}
+
+.badge--state-purple {
+	@apply border-purple-100;
+	@apply bg-purple-100;
+	@apply text-purple-800;
+}
+
 .site-footer svg.icon {
 	display: inline-block;
 	vertical-align: text-top;
