@@ -14,3 +14,7 @@
 		/*background-image: linear-gradient(to top, rgba(0,0,0,.55) 60px, transparent 100px), url("../assets/images/center/outside-3-23-2022-large.jpg");*/
 	}
 }
+
+.badge {
+	@apply mt-3;
+}
