@@ -1015,10 +1015,12 @@
         super(props);
         this.state = {
           value: 'https://bremertonsports.com/',
+          qrCodeCanvasSizePx: 500,
           isBSCLogoShowing: true,
         };
 
         this.handleTextChange = this.handleTextChange.bind(this);
+        this.handleQrCodeCanvasSizeChange = this.handleQrCodeCanvasSizeChange.bind(this);
         this.handleAddBSCLogoChange = this.handleAddBSCLogoChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleSaveClick = this.handleDownloadClick.bind(this);
@@ -1026,6 +1028,16 @@
 
       handleTextChange(e) {
         this.setState({ value: e.target.value });
+      }
+
+      handleQrCodeCanvasSizeChange(e) {
+        let qrCodeCanvasSizePx = parseInt(e.target.value, 10);
+
+        if (isNaN(qrCodeCanvasSizePx)) {
+          qrCodeCanvasSizePx = 0;
+        }
+
+        this.setState({ qrCodeCanvasSizePx });
       }
 
       handleAddBSCLogoChange(e) {
@@ -1040,26 +1052,29 @@
         e.preventDefault();
         const canvas = document.getElementsByTagName('canvas')[0];
 
-        if (canvas) {
-          exportCanvasAsPNG('qr-code', 'bsc-generated-qr-code.png')
+        if (!canvas) throw new Error('Canvas element could not be found!');
+
+        if (window.confirm('Have you tested the QR code with your phone?')) {
+          exportCanvasAsPNG('qr-code', 'bsc-generated-qr-code.png');
         }
       }
 
       render() {
+        const qrCodeCanvasSizePx = this.state.qrCodeCanvasSizePx;
         const qrCodeCanvasConfig = {
           key: 'qr-code-result',
           id: 'qr-code',
           className: 'mt-6',
           value: this.state.value,
-          size: 200,
+          size: qrCodeCanvasSizePx / (window.devicePixelRatio || 1),
           level: 'H'
         };
 
         if (this.state.isBSCLogoShowing) {
           qrCodeCanvasConfig.imageSettings = {
             src: '/assets/images/logos/logo-nobackground.svg',
-            width: 40,
-            height: 55,
+            width: (qrCodeCanvasConfig.size * 0.2), // 20%
+            height: (qrCodeCanvasConfig.size * 0.275), // 27.5%
             excavate: true,
           };
         }
@@ -1069,52 +1084,99 @@
           onSubmit: this.handleSubmit
         }, [
           React.createElement(
-            'label',
+            'div',
+            { key: 'qr-code-value-container' },
+            React.createElement(
+              'label',
+              {
+                key: 'qr-code-value-label',
+                className: 'font-semibold'
+              },
+              [
+                React.createElement(
+                  'span',
+                  {
+                    key: 'qr-code-value-label-content',
+                    className: 'block'
+                  },
+                  'QR Code Value'
+                ),
+                React.createElement(QRCodeInput, {
+                  key: 'qr-code-value',
+                  id: 'qr-code-value',
+                  className: 'mt-2 w-full sm:w-1/2',
+                  value: this.state.value,
+                  onChange: this.handleTextChange
+                })
+              ])
+          ),
+          React.createElement(
+            'div',
             {
-              key: 'qr-code-value',
-              className: 'block font-semibold'
+              key: 'qr-code-canvas-size-container',
+              className: 'mt-4'
             },
             [
-              React.createElement(
-                'span',
+            React.createElement(
+                'label',
                 {
-                  key: 'qr-code-value-label',
-                  className: 'block'
+                  key: 'qr-code-canvas-size-label',
+                  className: 'inline-block font-semibold'
                 },
-                'QR Code Value'
+                [
+                  React.createElement(
+                    'span',
+                    {
+                      key: 'qr-code-canvas-size-label-content',
+                      className: 'inline-block mr-2'
+                    },
+                    'QR code image size (pixels)'
+                  ),
+                  React.createElement(
+                    QrCodeCanvasSizeInput,
+                    {
+                      key: 'qr-code-canvas-size',
+                      id: 'qr-code-canvas-size-px',
+                      value: this.state.qrCodeCanvasSizePx,
+                      min: 0,
+                      step: 1,
+                      onChange: this.handleQrCodeCanvasSizeChange,
+                    },
+                  ),
+                ],
               ),
-              React.createElement(QRCodeInput, {
-                key: 'qr-code-value',
-                id: 'qr-code-value',
-                className: 'mt-2 w-full sm:w-1/2',
-                value: this.state.value,
-                onChange: this.handleTextChange
-              })
             ]
           ),
           React.createElement(
-            'label',
+            'div',
             {
-              key: 'add-bsc-logo-label',
-              className: 'inline-block font-semibold mt-4'
+              key: 'add-bsc-logo-container',
+              className: 'mt-4'
             },
             [
               React.createElement(
-                'span',
+                'label',
                 {
-                  key: 'add-bsc-logo-label-content',
-                  className: 'inline-block mr-2'
+                  key: 'add-bsc-logo-label',
+                  className: 'inline-block font-semibold'
                 },
-                'Add BSC logo'
-              ),
-              React.createElement(AddBSCLogoCheckbox, {
-                key: 'is-bsc-logo-showing-checkbox',
-                id: 'isBSCLogoShowing',
-                value: this.state.isBSCLogoShowing,
-                checked: this.state.isBSCLogoShowing,
-                onChange: this.handleAddBSCLogoChange
-              })]
-          ),
+                [
+                  React.createElement(
+                    'span',
+                    {
+                      key: 'add-bsc-logo-label-content',
+                      className: 'inline-block mr-2'
+                    },
+                    'Add BSC logo'
+                  ),
+                  React.createElement(AddBSCLogoCheckbox, {
+                    key: 'is-bsc-logo-showing-checkbox',
+                    id: 'isBSCLogoShowing',
+                    value: this.state.isBSCLogoShowing,
+                    checked: this.state.isBSCLogoShowing,
+                    onChange: this.handleAddBSCLogoChange
+                  })]
+              )]),
           React.createElement(
             QRCodeCanvas,
             qrCodeCanvasConfig
@@ -1173,6 +1235,19 @@
           className: 'rounded ' + props.className,
           value: props.value,
           checked: props.checked,
+          onChange: props.onChange
+        }
+      );
+    };
+
+    const QrCodeCanvasSizeInput = (props) => {
+      return React.createElement(
+        'input',
+        {
+          id: props.id,
+          type: 'number',
+          className: 'rounded ' + props.className,
+          value: props.value,
           onChange: props.onChange
         }
       );
