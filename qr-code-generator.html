@@ -58,8 +58,8 @@
         This QR code generator is for use by Bremerton Sports Center employees only.
       </p>
       <p class="mt-2">
-        If the text in the textbox below starts with &quot;https://bremertonsports.com&quot;, the resulting QR code will
-        include Bremerton Sports Center logo. Otherwise, the logo will be omitted.
+        If the "Add BSC logo" checkbox is checked, the resulting QR code will include Bremerton Sports Center logo.
+        Otherwise, the logo will be omitted.
       </p>
       <div id="qr-code-container" class="mt-6 columns-1"></div>
     </div>
@@ -1013,15 +1013,23 @@
     class QRCodeContainer extends React.Component {
       constructor(props) {
         super(props);
-        this.state = { value: 'https://bremertonsports.com/' };
+        this.state = {
+          value: 'https://bremertonsports.com/',
+          isBSCLogoShowing: true,
+        };
 
-        this.handleChange = this.handleChange.bind(this);
+        this.handleTextChange = this.handleTextChange.bind(this);
+        this.handleAddBSCLogoChange = this.handleAddBSCLogoChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleSaveClick = this.handleDownloadClick.bind(this);
       }
 
-      handleChange(e) {
+      handleTextChange(e) {
         this.setState({ value: e.target.value });
+      }
+
+      handleAddBSCLogoChange(e) {
+        this.setState({ isBSCLogoShowing: e.target.checked });
       }
 
       handleSubmit(e) {
@@ -1047,7 +1055,7 @@
           level: 'H'
         };
 
-        if (this.state.value.startsWith('https://bremertonsports.com')) {
+        if (this.state.isBSCLogoShowing) {
           qrCodeCanvasConfig.imageSettings = {
             src: '/assets/images/logos/logo-nobackground.svg',
             width: 40,
@@ -1064,21 +1072,48 @@
             'label',
             {
               key: 'qr-code-value',
-              className: 'font-semibold'
+              className: 'block font-semibold'
             },
             [
               React.createElement(
                 'span',
-                { className: 'block' },
+                {
+                  key: 'qr-code-value-label',
+                  className: 'block'
+                },
                 'QR Code Value'
               ),
               React.createElement(QRCodeInput, {
+                key: 'qr-code-value',
                 id: 'qr-code-value',
                 className: 'mt-2 w-full sm:w-1/2',
                 value: this.state.value,
-                onChange: this.handleChange
+                onChange: this.handleTextChange
               })
             ]
+          ),
+          React.createElement(
+            'label',
+            {
+              key: 'add-bsc-logo-label',
+              className: 'inline-block font-semibold mt-4'
+            },
+            [
+              React.createElement(
+                'span',
+                {
+                  key: 'add-bsc-logo-label-content',
+                  className: 'inline-block mr-2'
+                },
+                'Add BSC logo'
+              ),
+              React.createElement(AddBSCLogoCheckbox, {
+                key: 'is-bsc-logo-showing-checkbox',
+                id: 'isBSCLogoShowing',
+                value: this.state.isBSCLogoShowing,
+                checked: this.state.isBSCLogoShowing,
+                onChange: this.handleAddBSCLogoChange
+              })]
           ),
           React.createElement(
             QRCodeCanvas,
@@ -1122,8 +1157,22 @@
         {
           id: props.id,
           type: 'text',
-          className: props.className + ' rounded',
+          className: 'rounded ' + props.className,
           value: props.value,
+          onChange: props.onChange
+        }
+      );
+    };
+
+    const AddBSCLogoCheckbox = (props) => {
+      return React.createElement(
+        'input',
+        {
+          id: props.id,
+          type: 'checkbox',
+          className: 'rounded ' + props.className,
+          value: props.value,
+          checked: props.checked,
           onChange: props.onChange
         }
       );
