@@ -67,6 +67,10 @@ hr {
 	@apply border-gray-300;
 }
 
+dt {
+	@apply font-semibold;
+}
+
 .divider {
 	@apply text-border-color;
 }
