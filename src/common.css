@@ -69,6 +69,7 @@ hr {
 
 dt {
 	@apply font-semibold;
+	@apply mt-4;
 }
 
 .divider {
