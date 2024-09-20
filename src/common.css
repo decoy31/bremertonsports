@@ -89,7 +89,7 @@ dt {
 }
 
 .notice.halloween {
-	background-color: rgb(254 215 170); /* @apply bg-orange-200; */
+	background-color: rgba(253 186 116 / 0.5); /* @apply bg-orange-300/50; */
 }
 
 .badge {
