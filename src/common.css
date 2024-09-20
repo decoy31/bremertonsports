@@ -88,6 +88,10 @@ dt {
 	@apply font-semibold;
 }
 
+.notice.halloween {
+	@apply bg-color-orange;
+}
+
 .badge {
 	@apply select-none;
 	@apply inline-block;
