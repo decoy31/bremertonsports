@@ -1,10 +1,18 @@
 .hero-image-container {
 	@apply w-full;
 	height: 25vh;
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url("../assets/images/center/outside-3-23-2022-large.jpg");
+	background-image: url("../assets/images/center/outside-3-23-2022-large.jpg"); */
+	background-color: black;
+}
+
+.hero-video {
+	@apply w-full;
+	@apply h-full;
+	aspect-ratio: 16 / 9;
+	margin: 0 auto;
 }
 
 @screen md {
