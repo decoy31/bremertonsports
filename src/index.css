@@ -1,6 +1,6 @@
 .hero-image-container {
 	@apply w-full;
-	height: 25vh;
+	height: 32vh;
 	/* background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -17,7 +17,7 @@
 
 @screen md {
 	.hero-image-container {
-		height: 45vh;
+		height: 60vh;
 		background-size: cover;
 		/*background-image: linear-gradient(to top, rgba(0,0,0,.55) 60px, transparent 100px), url("../assets/images/center/outside-3-23-2022-large.jpg");*/
 	}
