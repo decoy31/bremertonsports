@@ -89,23 +89,23 @@
       <div class="mt-4">
         If you are having trouble viewing the document, you can <a href="/assets/docs/rules/BSC%20House%20Rules.pdf">download the document</a> instead.
       </div>
-      <noscript>
-        <div class="mt-4">
-          <iframe src="/assets/docs/rules/BSC%20House%20Rules.pdf" width="100%" height="800px"></iframe>
-        </div>
-      </noscript>
-      <div id="adobe-dc-view" class="mt-4 w-full h-screen"></div>
-      <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-      <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function(){
-          var adobeDCView = new AdobeDC.View({clientId: "a43132d8df9644a6a0426c30feefe53e", divId: "adobe-dc-view"});
-          adobeDCView.previewFile({
-            content:{location: {url: "/assets/docs/rules/BSC%20House%20Rules.pdf"}},
-            metaData:{fileName: "BSC House Rules.pdf"}
-          }, { embedMode: "IN_LINE", showFullScreen: true });
-        });
-      </script>
     </div>
+    <noscript>
+      <div class="mt-4">
+        <iframe src="/assets/docs/rules/BSC%20House%20Rules.pdf" width="100%" height="800px"></iframe>
+      </div>
+    </noscript>
+    <div id="adobe-dc-view" class="mt-4 w-full h-screen"></div>
+    <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("adobe_dc_view_sdk.ready", function(){
+        var adobeDCView = new AdobeDC.View({clientId: "a43132d8df9644a6a0426c30feefe53e", divId: "adobe-dc-view"});
+        adobeDCView.previewFile({
+          content:{location: {url: "/assets/docs/rules/BSC%20House%20Rules.pdf"}},
+          metaData:{fileName: "BSC House Rules.pdf"}
+        }, { embedMode: "IN_LINE", showFullScreen: true });
+      });
+    </script>
   </main>
 
   <hr class="mt-8" />
