@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "python3 -m http.server 3000",
-    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:youth-soccer-leagues && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy && npm run build:force-development-program && npm run build:silent-auction && npm run build:silent-auction-items && npm run build:qr-code-generator && npm run build:contact-us && npm run build:faq && npm run build:jobs && npm run build:privacy-policy && npm run build:policies-and-procedures",
+    "build": "npm run build:fonts && npm run build:common && npm run build:index && npm run build:soccer && npm run build:youth-soccer-leagues && npm run build:rentals && npm run build:cornhole && npm run build:rules && npm run build:redefine-fitness && npm run build:ape && npm run build:rising-force-academy && npm run build:force-development-program && npm run build:silent-auction && npm run build:silent-auction-items && npm run build:qr-code-generator && npm run build:contact-us && npm run build:faq && npm run build:jobs && npm run build:privacy-policy && npm run build:policies-and-procedures && npm run build:terms-of-service",
     "build:fonts": "npx tailwindcss -i ./src/fonts.css -o ./dist/fonts.css",
     "build:common": "npx tailwindcss -i ./src/common.css -o ./dist/common.css",
     "build:index": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
@@ -47,7 +47,9 @@
     "build:privacy-policy": "npx tailwindcss -i ./src/jobs.css -o ./dist/privacy-policy.css",
     "watch:privacy-policy": "npx tailwindcss -i ./src/jobs.css -o ./dist/privacy-policy.css --watch",
     "build:policies-and-procedures": "npx tailwindcss -i ./src/jobs.css -o ./dist/policies-and-procedures.css",
-    "watch:policies-and-procedures": "npx tailwindcss -i ./src/jobs.css -o ./dist/policies-and-procedures.css --watch"
+    "watch:policies-and-procedures": "npx tailwindcss -i ./src/jobs.css -o ./dist/policies-and-procedures.css --watch",
+    "build:terms-of-service": "npx tailwindcss -i ./src/jobs.css -o ./dist/terms-of-service.css",
+    "watch:terms-of-service": "npx tailwindcss -i ./src/jobs.css -o ./dist/terms-of-service.css --watch"
   },
   "repository": {
     "type": "git",
