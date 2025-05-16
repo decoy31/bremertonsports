@@ -6,7 +6,7 @@ Code for the [Bremerton Sports Center website](https://www.bremertonsports.com/)
 
 ## Initial Setup
 
-1. `nvm use 16.14.2`
+1. `nvm use 20.18.0`
 2. `npm i`
 3. `npm run build`
 
