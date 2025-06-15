@@ -5,7 +5,9 @@ const Forms = require('@tailwindcss/forms');
 module.exports = {
   content: [
     './src/**/*.{html,js}',
-    './**/*.html'
+    './**/*.html',
+    '!./node_modules/**/*',
+    '!./dist/**/*',
   ],
   theme: {
     extend: {
