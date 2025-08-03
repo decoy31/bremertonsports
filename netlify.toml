@@ -3,3 +3,9 @@
   to = "/assets/docs/menu/bremerton-sports-center-concession-stand-menu.pdf"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/kacts"
+  to = "/assets/docs/youth/Krakens%20Academy%20Class%20Training%20Schedule.pdf"
+  status = 301
+  force = false
