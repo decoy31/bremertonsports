@@ -21,7 +21,7 @@ td {
   @apply p-2;
 }
 
-th.dow {
+th.gray-header {
   @apply bg-gray-100;
 }
 
