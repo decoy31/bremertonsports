@@ -65,7 +65,7 @@
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/forms": "0.5.10",
     "autoprefixer": "10.4.4",
-    "netlify": "13.1.21",
+    "netlify": "13.3.5",
     "postcss": "8.4.12",
     "postcss-import": "14.1.0",
     "postcss-nesting": "7.0.0",
